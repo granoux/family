@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Famille Granoux</title>
+  
+  <meta name="description" content="Page r&eacute;f&eacute;rençant les sites de la famille Granoux. Website about family Granoux." />
+  <meta name="autor" content="Olivier Granoux" />
+  <meta name="date" content="2020-11-12T00:00:00+01:00" />
+  <meta name="keywords" content="granoux, Granoux" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  html, a {
+    color:#212529;
+  }
+  html {
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  } 
+  h1, h2 {
+    font-weight: 500; 
+    margin: .5rem 0;
+  }
+  h1 { 
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align:center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.175);
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  a {
+    display:contents;
+    text-decoration: none;
+  }
+  img.extern-link  {
+    height: .8rem;
+    width: auto;
+    margin-left:.2rem;
+  }
+
+  footer,  body > header { 
+    text-align: center; 
+  }
+  /* footer p {
+    display: inline-flex;
+    align-items: center;
+  } */
+  body > header, main > section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  main section {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  main img:not(.extern-link) {
+    display:none;
+    visibility: hidden;
+  }
+
+  article { 
+    width:100%;
+    margin: 1rem;
+  }
+  article div.body {
+    background-color: rgba(5,5,5,.02);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  }
+  article div.body:hover {
+    box-shadow: 0 .150rem .50rem rgba(33,33,33,0.3);
+    transition: box-shadow .3s;
+  }
+  article div.content {
+    margin: 0 .5rem;
+  }
+
+/* 
+Bootstrap 4 breakpoints
+Extra small devices (portrait phones) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones) */
+@media screen and (min-width: 576px) {  
+  article div.body {
+    display: flex;
+    flex-direction: row;
+  }  
+
+  main img:not(.extern-link) {
+    display: block;
+    visibility: visible;
+    width:150px;
+    max-width: 150px;
+    min-width: 150px;
+  } 
+}
+  
+/* Medium devices */
+@media screen and (min-width: 768px) {  
+  article { 
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 1rem 1.5rem 1rem;
+    margin:0;
+  }
+
+  article div.body {
+    display: block;
+  }
+
+  main img:not(.extern-link){
+    width: 100%;
+    max-width: none;
+  }
+}
+  
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) { 
+  article { 
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+  
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {  
+}
+
+@media print {
+  * {
+    margin:0 !important;
+    padding:0 !important;
+    border:none !important;
+    box-shadow: none !important;
+  }
+  div.content header h2 {
+    margin-top:10px !important;
+  }
+  a[href]:after {
+    content: attr(href);
+	}
+  img, footer {
+    display:none;
+    visibility:hidden;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Famille Granoux</h1>
+    <p>La page regroupe un ensemble de sites familiaux</p>
+  </header>
+ 
+  <main>
+    <section>
+      <article>
+        <a href="http://www.legi.grenoble-inp.fr/people/Gabriel.Moreau/" title="site de Gabriel Moreau">
+          <div class="body">
+            <img src="images/gabriel.png">
+            <div class="content">
+              <header><h2 class="extern-link">Gabriel <img class="extern-link" src="images/external-link-alt-solid.svg"></h2></header>
+              <p>Un melting pot de 5 années d'enseignement à l'Université de Bretagne Sud / Lorient, du boulot donc mais aussi des photos de voyages (alaska, bolivie...) ainsi que du grand bonheur que d'être papa !</p>
+            </div>            
+          </div>
+        </a>
+      </article>
+      
+      <article>
+        <a href="https://granoux.github.io/asf-16/" title="site AsF 16">
+          <div class="body">
+            <img src="images/asf-16.png">
+            <div class="content">
+              <header><h2>AsF 16 <img class="extern-link" src="images/external-link-alt-solid.svg"></h2></header>
+              <p>Site pour mettre à jour et compléter le carto-guide transfrontalier CAF + CAI + IGN sur les massifs du Mont Blanc et du Petit Saint Bernard (parution septembre 2002).</p>
+            </div>
+          </div>
+        </a>
+      </article>  
+
+      <article>
+        <a href="http://www.cafmeythet.org/" title="site du CAF Meythet">
+          <div class="body">
+            <img src="images/caf-meythet.png">
+            <div class="content">
+              <header><h2>CAF Meythet <img class="extern-link" src="images/external-link-alt-solid.svg"></h2></header>
+              <p>Le CAF Meythet, un petit club de montagne récent et innovant, organisant 30 sorties collectives chaque mois (randonnées, escalade, ski de montagne, etc ...) le plus souvent sans inscription, avec un rendez-vous fixé sur une boîte vocale.</p>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article>
+        <a href="http://olivier.granoux.com/" title="site d'Olivier Granoux">
+          <div class="body">
+            <img src="images/olivier.png">
+            <div class="content">
+              <header><h2>Olivier <img class="extern-link" src="images/external-link-alt-solid.svg"></h2></header>
+              <p>Galerie de photos (voyages, aviron, fleurs, etc.)</p>
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+  
+  <footer>
+    <a href="https://github.com/granoux/family" title="source sur GitHub">
+      <img title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76IRWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjVs4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODElV6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINYhGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9Okh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqammaAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4xSlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYATKfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsyePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6AbpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT35ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heWVnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyuwM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=" width="32" height="32">
+    </a>
+  </footer>
+
+</body>
+</html>

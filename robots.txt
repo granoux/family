@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /*.png
+Disallow: /*.gif
+Disallow: /*.jpg
+Disallow: /*.jpeg
+Disallow: /inc/
+Disallow: /granoux/
+Disallow: /olivier/
+Disallow: /galerie/
